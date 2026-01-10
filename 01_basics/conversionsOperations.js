@@ -14,6 +14,25 @@ let res = Number(score)
 
 let isLoggedIn = 1
 let boolisLoggedIn = Boolean(isLoggedIn)
-console.log(typeof(boolisLoggedIn))
+// console.log(typeof(boolisLoggedIn))
 
 // 1>true 0>false "">false "srefre">true
+
+let value = 5
+let negValue = -value
+// console.log(typeof(negValue))
+let str1 = "Hello" , str2 =" World"
+let str3 = str1 + str2
+// console.log(str3)
+// 1. Postfix (x++) → "Use First, Update Later"
+let counter  = 19
+let newCounter = counter++
+console.log(newCounter)
+console.log(counter)
+
+// Prefix (++x) → "Update First, Use Later"
+let oldCounter = 19
+let count = ++oldCounter
+
+console.log(count)
+console.log(oldCounter)
