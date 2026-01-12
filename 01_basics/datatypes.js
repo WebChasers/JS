@@ -8,7 +8,7 @@
 // but typeof null is only bug which shows object
 
 // data types can be primitive and non primitive
-//primitive (call by value) copy changes not an address 
+//primitive (call by value) copy changes not an address. 
 // string, Number, Boolean ,null , undefined , symbol , BigInt(big values )
 
 
@@ -30,3 +30,13 @@ let obj = {
 const my = function arr(){
     console.log("helloworld");
 }
+
+
+//Memory:
+// stack (Primitive) ,              heap(non-primitive)
+// \> original value ki copy            \> value ka reference  
+
+
+let a = "Hello To B"
+let b = a
+console.log(b)
