@@ -12,9 +12,9 @@
 // string, Number, Boolean ,null , undefined , symbol , BigInt(big values )
 
 
-const id = symbol('2');
-const anotherId = symbol('2 ')
-console.log(id === anotherId);  // so in this return values will not be same
+// const id = symbol('2')
+// const anotherId = symbol('2')
+// console.log(id === anotherId);  // so in this return values will not be same
 
 // mostly unique things like IDs 
 // Reference (Non-primitive) return types mostly object
@@ -39,4 +39,17 @@ const my = function arr(){
 
 let a = "Hello To B"
 let b = a
-console.log(b)
+b = "Hello To C"
+// console.log(b)
+
+// above for stack below for heap
+let userone = {
+
+    name: "nasir",
+    age:23
+}
+let usertwo = userone // will get reference not will make copy
+console.log(usertwo) 
+usertwo.name = "Arain"
+console.log(userone.name)
+console.log(usertwo.name)
